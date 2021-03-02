@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cap 2 - HTML</title>
+    <link rel="stylesheet" type="text/css" href="css/principal.css">
+    <link rel="stylesheet" type="text/css" href="css/titulos.css">
+</head>
+
+<body>
+    <!-- TAGS BÁSICAS -->
+    <h1 class="conteudo">========== TAGS BÁSICAS ==========</h1>
+    <p>Primeiro parágrafo</p>
+    <p>Segundo parágrafo</p>
+
+    <br>
+
+    Linha 1 <br>
+    Linha 2 <br>
+    Linha 3
+
+    <br>
+
+    <h1>1. Título</h1>
+    <p>Introdução do capítulo</p>
+
+    <h2>1.1. Subtítulo</h2>
+    <p>Introdução desta seção</p>
+
+    <h3>1.1.1. Subtítulo</h3>
+    <p>Introdução desta subseção</p>
+
+    <br>
+
+    <img src="img/fiap.jpg" width="300" height="200" alt="Logo da FIAP">
+
+    <br>
+
+    <div class="artigo">
+        Conteúdo Teste representando um artigo.
+    </div>
+
+    <br>
+
+    <article>
+        <header>
+            <h1>Título do Artigo</h1>
+            <p>Publicado em: <time pubdate="pubdate" datetime="2015-11-17">17 de novembro de 2015</time></p>
+        </header>
+
+        <p>Aqui começa este grande artigo...</p>
+
+        <section>
+            <h2>Subseção do Artigo</h2>
+            <p>Aqui entra uma subseção...</p>
+        </section>
+
+        <section>
+            <h2>Outra subseção do Artigo</h2>
+            <p>Aqui entra outra subseção...</p>
+
+            <figure>
+                <img src="img/fiap.jpg" width="100" height="75" alt="Figura" title="Figura">
+                <figcaption>Figura importante da seção</figcaption>
+            </figure>
+        </section>
+
+        <footer>
+            <p>Creative Commons Attribution-ShareAlike License</p>
+        </footer>
+    </article>
+
+    <br>
+    
+    <a href="outra pagina">Link para outra página</a>
+    <br><br>
+    <a target="_blank" href="http://www.fiap.com.br">
+        <img src="img/fiap.jpg" width="300" height="200" alt="Logo da FIAP">
+    </a>
+
+
+    <hr>
+
+
+    <!-- LISTAS -->
+    <h1 class="conteudo">========== LISTAS ==========</h1>
+    <ol>
+        <li value="1">Teste 1</li>
+        <li value="2">Teste 2</li>
+        <li value="3">Teste 3</li>
+    </ol>
+
+    <ul>
+        <li>Teste 1</li>
+        <li>Teste 2</li>
+        <li>Teste 3</li>
+    </ul>
+
+
+    <hr>
+
+
+    <!-- IFRAMES -->
+    <h1 class="conteudo">========== IFRAMES ==========</h1>
+    <a href="iframe1.html" target="janela">Clique aqui para abrir a página 1 dentro do iframe</a> <br>
+    <a href="iframe2.html" target="janela">Clique aqui para abrir a página 2 dentro do iframe</a>
+	<br><br>
+	Iframe abaixo:
+	<iframe name="janela" width="100" height="100" src="iframe1.html"></iframe>
+
+
+    <hr>
+
+
+    <!-- TABELAS -->
+    <h1 class="conteudo">========== TABELAS ==========</h1>
+    <table width="500" border="1">
+        <thead>
+            <tr><!-- Primeira linha -->
+                <th width="50%">Curso</th>
+                <th>Conteudista</th>
+                <th>Tutor</th>
+                <th>Realizado</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr><!-- Segunda linha -->
+                <td>Gamificação</td>
+                <td colspan="2">Henrique Poyatos</td>
+                <td rowspan="2">Sim</td>
+            </tr>
+            <tr><!-- Terceira linha -->  
+                <td>Prototipação</td>
+                <td>Almir Alves</td>
+                <td>Almir Alves</td>		
+            </tr>
+        </tbody>
+    </table>
+
+
+    <hr>
+
+
+    <!-- FORMULÁRIOS -->
+    <h1 class="conteudo">========== FORMULÁRIOS ==========</h1>
+    <form id="formulario" method="POST" action="processaForm.php">
+        <label for="nome">Nome Completo</label>
+        <input type="text" id="nome" value="João Ninguém">
+    </form>
+
+    <br>
+
+    <form id="formulario" method="POST">
+        <!-- Caixa de texto -->
+        <label for="nome">Nome Completo: </label>
+        <input type="text" id="nome">
+        <br>
+        <!-- Caixa para senha -->
+        <label for="senha">Senha: </label>
+        <input type="password" id="senha"><br>
+        <br>
+        <!-- Botões de escolha única -->
+        <label for="estcivil">Estado Civil: </label>
+        <input type="radio" name="estcivil" value="Solteiro">Solteiro 
+        <input type="radio" name="estcivil" value="Casado">Casado 
+        <input type="radio" name="estcivil" value="Viúvo">Viúvo<br>
+        <br>
+        <!-- Caixas de múltipla escolha -->
+        <label for="interesses">Interesses: </label>
+        <input type="checkbox" name="interesses" value="Música">Música
+        <input type="checkbox" name="interesses" value="Cinema">Cinema
+        <input type="checkbox" name="interesses" value="Teatro">Teatro<br>
+        <br>
+        <!-- Campo para upload -->
+        <label for="foto">Foto: </label>
+        <input type="file" id="foto"><br>
+        <br>
+        <!-- Botões -->
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar dados">
+        <input type="button" value="Faz nada">
+	</form>
+
+    <br>
+
+    <form id="formulario" method="POST">
+        <select id="estcivil" name="estcivil">
+            <option value="S" selected>Solteiro</option>
+            <option value="C">Casado</option>
+            <option value="V">Viúvo</option>
+            <option value="D">Divorciado</option>
+        </select>
+    </form>
+
+    <br>
+
+    <form id="formulario" method="POST">
+        <label for="carros">Carros preferidos</label>
+
+        <select id="carros" name="carros" size="8" multiple>
+            <optgroup label="FIAT">
+                <option value="500">500</option>
+                <option value="Uno">Palio</option>
+                <option value="Uno">Uno</option>
+            </optgroup>
+
+            <optgroup label="FORD">
+                <option value="Fiesta">Fiesta</option>
+                <option value="Focus">Focus</option>
+                <option value="Ka">Ka</option>
+            </optgroup> 
+        </select>
+    </form>
+
+    <br>
+
+    <form id="formulario" method="POST">
+        <label for="obs">Observações</label><br>
+        <textarea id="obs" rows="5" cols="50">Texto de exemplo.</textarea>
+    </form>
+
+    <br>
+
+    <form id="formulario" method="POST">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome"><br>
+        
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade"><br>
+        </fieldset>
+    </form>
+
+    <br>
+
+    <form id="formulario" method="POST">
+        <label for="navegador">Qual seu navegador preferido?</label>
+        <input list="navegadores" name="navegador">
+
+        <datalist id="navegadores">
+            <option value="Google Chrome">Google Chrome</option>
+            <option value="Mozilla Firefox">Mozilla Firefox</option>
+            <option value="Internet Explorer">Internet Explorer</option>
+            <option value="Opera">Opera</option>
+            <option value="Apple Safari">Apple Safari</option>
+        </datalist>
+    </form>
+
+    <br>
+
+    <form id="formulario" method="POST">
+        <progress value="25" max="100"></progress>
+    </form>
+</body>
+</html>
