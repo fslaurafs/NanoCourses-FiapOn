@@ -1,10 +1,5 @@
 <h1 align="center"> :books: Nano Courses - FIAP ON </h1>
 
-<h3> :pushpin: Sobre: </h3>
-<p>Projetos dos Nano Courses realizados na plataforma da FIAP On.</p>
-
-<hr>
-
 <h3> :heavy_check_mark: Cursos: </h3>
 
 <details>
