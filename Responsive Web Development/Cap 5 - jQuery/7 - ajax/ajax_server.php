@@ -4,6 +4,7 @@ $sigla = "";
 if(isset($_POST['sigla'])) {
     $sigla = strtoupper($_POST['sigla']);
 }
+// ou: $sigla = (isset($_POST['sigla']) ? strtoupper($_POST['sigla']) : "");
 
 /* procura a sigla */
 switch($sigla) {
