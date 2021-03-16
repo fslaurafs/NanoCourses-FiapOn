@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo JS</title>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+    <!-- EXEMPLO 1: (OBSTRUSIVO)
+    <input type="button" value="Teste" onclick="window.alert('Alô Mundo!');">
+    -->
+
+
+    <!-- EXEMPLO 2: (OBSTRUSIVO)
+    <input type="button" value="Teste" onclick="exibirFrase();">
+    -->
+
+
+    <!-- EXEMPLO 3: (NÃO-OBSTRUSIVO)
+    <input type="button" value="Teste" id="botao">
+    -->
+
+
+    <!-- EXEMPLO 4: (NÃO-OBSTRUSIVO)
+    <input type="button" value="Teste" id="botao">
+    -->
+
+    
+    <!-- EXEMPLO 5: (NÃO-OBSTRUSIVO) -->
+    <input type="button" value="Teste" id="botao">
+</body>
+</html>
+
+
+<!-- EXEMPLO 2:
+<script>
+    function exibirFrase() {
+        window.alert("Alô Mundo!");
+    }
+</script>
+-->
+
+
+<!-- EXEMPLO 3: (DOM - DOCUMENT OBJECT MODEL)
+<script>
+    var objBotao = document.getElementById("botao");
+
+    objBotao.onclick = function() {
+        window.alert("Alô Mundo!");
+    }
+</script>
+-->
+
+
+<!-- EXEMPLO 4:
+<script src="js/script.js"></script>
+-->
