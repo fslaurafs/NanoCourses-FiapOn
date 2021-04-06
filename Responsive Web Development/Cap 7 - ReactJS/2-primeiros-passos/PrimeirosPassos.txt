@@ -1,0 +1,8 @@
+>>> Instalando globalmente na máquina (necessário apenas 1 vez):
+npm install create-react-app -g
+
+>>> Criando o projeto:
+npx create-react-app [nome do projeto]
+
+>>> Iniciando edição do projeto:
+npm run start
