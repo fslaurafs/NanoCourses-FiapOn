@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Descanse na Rede</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+    <!-- CABEÇALHO -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand logo" href="#"> <i class="fas fa-hiking"></i> Descanse na Rede </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active"> <a class="nav-link" href="#">Home <span class="sr-only">(current)</span> </a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Hotéis</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Roteiros</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CAROUSEL INICIAL -->
+    <section class="container">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="2000">
+                    <img src="img/carousel-1.jpg" class="d-block w-100"/>
+                    <div class="carousel-caption d-none d-md-block faixa">
+                        <h3>Trilha nas Montanhas</h3>
+                        <p>Uma linda trilha pelas montanhas da Patagônia.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-interval="4000">
+                    <img src="img/carousel-2.jpg" class="d-block w-100" />
+                    <div class="carousel-caption d-none d-md-block faixa">
+                        <h3>Vale da Morte</h3>
+                        <p>Imagine a experiência de passar 1 semana no deserto.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-interval="6000">
+                    <img src="img/carousel-3.jpg" class="d-block w-100" />
+                    <div class="carousel-caption d-none d-md-block faixa">
+                        <h3>Minas de Moto</h3>
+                        <p>Conhecer Minas é sempre fantástico, imagina só conhecer de moto.</p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <section class="titulo mt-2">
+        <h1 class="text-center fonte-titulo cor-especial pt-5">Roteiros de Aventura</h1>
+        <p class="text-center text-secondary pb-5">Os melhores roteiros de aventura você encontra aqui.</p>
+    </section>
+    
+    <hr class="borda-cor-especial" />
+
+    <!-- CARDS -->
+    <section class="d-flex flex-row justify-content-between mt-5 margem cards">
+        <div class="card mb-3 card-largura borda-cor-especial">
+            <img src="img/card-1.jpg" class="card-img-top card-posicao-imagem"/>
+            <div class="card-body">
+                <h5 class="card-title">Patagônia</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="btn botao-cor-especial borda-cor-especial" data-toggle="modal" data-target="#modalContrate">Contrate esse roteiro</a>
+            </div>
+        </div>
+
+        <div class="card mb-3 card-largura borda-cor-especial">
+            <img src="img/card-2.jpg" class="card-img-top card-posicao-imagem"/>
+            <div class="card-body">
+                <h5 class="card-title">Everest</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="btn botao-cor-especial borda-cor-especial" data-toggle="modal" data-target="#modalContrate">Contrate esse roteiro</a>
+            </div>
+        </div>
+
+        <div class="card mb-3 card-largura borda-cor-especial">
+            <img src="img/card-3.jpg" class="card-img-top card-posicao-imagem"/>
+            <div class="card-body">
+                <h5 class="card-title">Lençóis Maranhenses</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="btn botao-cor-especial borda-cor-especial" data-toggle="modal" data-target="#modalContrate">Contrate esse roteiro</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="d-flex flex-row justify-content-between mt-5 margem cards">
+        <div class="card mb-3 card-largura borda-cor-especial">
+            <img src="img/card-4.jpg" class="card-img-top card-posicao-imagem"/>
+            <div class="card-body">
+                <h5 class="card-title">Amazônia</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="btn botao-cor-especial borda-cor-especial" data-toggle="modal" data-target="#modalContrate">Contrate esse roteiro</a>
+            </div>
+        </div>
+
+        <div class="card mb-3 card-largura borda-cor-especial">
+            <img src="img/card-5.jpg" class="card-img-top card-posicao-imagem"/>
+            <div class="card-body">
+                <h5 class="card-title">Dia de Los Muertos</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="btn botao-cor-especial borda-cor-especial" data-toggle="modal" data-target="#modalContrate">Contrate esse roteiro</a>
+            </div>
+        </div>
+
+        <div class="card mb-3 card-largura borda-cor-especial">
+            <img src="img/card-6.jpg" class="card-img-top card-posicao-imagem"/>
+            <div class="card-body">
+                <h5 class="card-title">Nazaré</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="btn botao-cor-especial borda-cor-especial" data-toggle="modal" data-target="#modalContrate">Contrate esse roteiro</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULÁRIOS -->
+    <div class="modal fade margem" id="modalContrate" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel" data-toggle="modal" data-target="#modalContrate">Contrate seu roteiro</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name" class="col-form-label">Nome:</label>
+                            <input type="text" class="form-control" id="name"/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefone" class="col-form-label">Telefone:</label>
+                            <input type="tel" class="form-control" id="telefone"/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="col-form-label">Email:</label>
+                            <input type="email" class="form-control" id="email"/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn botao-cor-especial">Enviar Mensagem</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RODAPÉ -->
+    <footer class="bg-dark mt-5">
+        <div class="container d-flex justify-content-center">
+            <p class="text-center p-3 text-light">Feito com <span class="cor-especial heart">&hearts;</span> por Descanse na Rede | Copyright &copy; 2020</p>
+        </div>
+    </footer>
+</body>
+</html>
