@@ -8,6 +8,11 @@
 </details>
 
 <details>
+    <summary><strong>Inteligência Artificial e Computacional</strong></summary>
+    <p>Aprenda a desenvolver mecanismos e dispositivos tecnológicos que possam simular o raciocínio humano. Neste módulo será abordado desde o básico em Inteligência Artificial a      sistemas especialistas e hands on com machine learning.</p>
+</details>
+
+<details>
     <summary><strong>Python</strong></a></summary>
     <p>A linguagem Python é considerada uma das melhores para iniciantes em programação, além de ser muito poderosa. Aprenda os principais recursos dessa linguagem.</p>
 </details>
